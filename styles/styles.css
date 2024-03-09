@@ -18,7 +18,7 @@ main img {
     height: auto;
     border: 1px solid #4682b4;
     padding: 2px;
-    box-shadow: 0 0 30 px;
+    box-shadow: 0 0 30px;
 }
 
 p { padding: 0; }
@@ -30,7 +30,7 @@ main {
 aside {
     width:20rem;
     margin: 1rem;
-    border: 1px solid rgba(0,0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,0.2);
     padding: 1rem;
     background-color: rgb(205, 230, 245,0.4) ;
     color: #333;
