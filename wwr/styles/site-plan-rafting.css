@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@400;700&display=swap');
+body {  
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px; 
+}
+
+:root {
+    /* Colors */
+    --primary-color: #1F508C; /* Dark River Blue */
+    --secondary-color: #D2B48C; /* Sandy Taupe*/
+    --accent1-color: #FFA500; /* Sunburst Orange */
+    --accent2-color: #6B8E23; /* Moss Green */
+  
+    /* Fonts */
+    --heading-font: 'Koulen', serif;
+    --paragraph-font: 'Roboto', sans-serif;
+  
+    /* Navigation */
+    --nav-background-color: #333; /* Dark Gray */
+    --nav-link-color: #FFF; /* White */
+    --nav-hover-link-color: #FFA500; /* Sunburst Orange */
+    --nav-hover-bg-color: #555; /* Dark Gray */
+
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p { 
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);  
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link,nav a:visited {
+    color: var(--nav-hover-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-bg-color);
+}
