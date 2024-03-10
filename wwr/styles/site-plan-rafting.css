@@ -6,21 +6,21 @@ body {
 }
 
 :root {
-    /* Colors */
-    --primary-color: #1F508C; /* Dark River Blue */
-    --secondary-color: #D2B48C; /* Sandy Taupe*/
-    --accent1-color: #FFA500; /* Sunburst Orange */
-    --accent2-color: #6B8E23; /* Moss Green */
   
-    /* Fonts */
+    --primary-color: #1F508C; 
+    --secondary-color: #D2B48C; 
+    --accent1-color: #FFA500; 
+    --accent2-color: #6B8E23; 
+  
+   
     --heading-font: 'Koulen', serif;
     --paragraph-font: 'Roboto', sans-serif;
   
-    /* Navigation */
-    --nav-background-color: #333; /* Dark Gray */
-    --nav-link-color: #FFF; /* White */
-    --nav-hover-link-color: #FFA500; /* Sunburst Orange */
-    --nav-hover-bg-color: #555; /* Dark Gray */
+    
+    --nav-background-color: #333; 
+    --nav-link-color: #FFF; 
+    --nav-hover-link-color: #FFA500; 
+    --nav-hover-bg-color: #555; 
 
 }
 
