@@ -1,13 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@400;700&display=swap');
 
-
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
-
 :root {
     --primary-color: #1F508C; 
     --secondary-color: #D2B48C; 
@@ -22,6 +15,12 @@ body {
     --nav-hover-link-color: #FFA500; 
     --nav-hover-bg-color: #555; 
 
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
