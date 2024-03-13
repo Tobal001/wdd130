@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@400;700&display=swap');
-body {  
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px; 
-}
+
 
 :root {
   
@@ -38,6 +34,22 @@ h1, h2, h3, h4, h5, h6 {
 header {
     padding: 20px;
     background-color: var(--accent1-color);
+}
+
+ul li:nth-child(1) {
+    color: var(--primary-color);
+}
+
+ul li:nth-child(2) {
+    color: var(--secondary-color);
+}
+
+ul li:nth-child(3) {
+    color: var(--accent1-color);
+}
+
+ul li:nth-child(4) {
+    color: var(--accent2-color);
 }
 
 p { 
