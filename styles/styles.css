@@ -41,7 +41,7 @@ aside {
     padding: 1rem;
     background-color: rgb(205, 230, 245,0.4) ;
     color: #333;
-    text-align: center;
+    text-align: relative;
 }
 
 aside img {
@@ -49,7 +49,11 @@ aside img {
     height: auto; 
 }
 
-
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150;
+}
 
 footer {
     margin-top: 15px;
