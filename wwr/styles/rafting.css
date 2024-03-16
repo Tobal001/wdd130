@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #1F508C; 
+    --secondary-color: #D2B48C; 
+    --accent1-color: #FFA500; 
+    --accent2-color: #6B8E23; 
+  
+    --heading-font: 'Koulen', serif;
+    --paragraph-font: 'Roboto', sans-serif;
+  
+    --nav-background-color: #333; 
+    --nav-link-color: #FFF; 
+    --nav-hover-link-color: #FFA500; 
+    --nav-hover-background-color: #555; 
+
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.hero {
+    position: relative;
+
+}
+
+.hero-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+.hero h1, article {
+    position: absolute;
+}
+
+article {
+
+    background-color: var(--secondary-color);
+    opacity: 0.2;
+}
+
+section {
+    clear: both;
+}
+
