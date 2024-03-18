@@ -34,42 +34,45 @@ h1, h2, h3, h4, h5, h6 {
 .hero {
     position: relative;
     margin-top: 10px;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
- 
-
-}
-
-.hero h1{
-    position: absolute;
-    top: 20px;
-    left: 40px;
+    text-align: center;
     color: #FFF;
 }
 
-.hero h1 {
-    top:  20px;
-    left: 20px;
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
+.hero h1 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #FFF;
+   
 }
 
 .hero article {
     position: absolute;
-    background-color: var(--secondary-color); opacity: 0.8;
-    padding: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    bottom: 0;
+    background-color: rgb(210, 180, 140, 0.7); 
+    color:white;
+    padding:50px;
+    margin:50px;
+    margin-bottom: 100px;
+
 }
 
 .hero article img {
-    max-width: 100px;
-    float: right ;
+    width: 200px;
+    float: right;
     height: auto;
-   
+   padding: 10px;
   
 }
 
+footer img{
+    width: 50px;
+}
