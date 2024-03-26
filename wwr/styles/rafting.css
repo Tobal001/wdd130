@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:wght@400;700&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -22,14 +22,58 @@
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
+    max-width: 1000px;
+    margin: 1rem auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+
+
+/*--- Header Nav ---*/
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 50px 10px 50px;
+
+}
+
+header img{
+    margin: 20px;
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation li {
+    margin-left: 20px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color:var(--nav-background-color);
+    padding: 20px 15px;
+}
+
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+    font-weight: 700;
+}
+
+/*--- Hero Banner -- */
 
 .hero {
     position: relative;
@@ -73,6 +117,102 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
+/*--- History section ---*/
+.history-section {
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.history-section > h2 {
+    grid-column: 1/ -1;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.history-section > p {
+    padding: 10px;
+    border: 1px solid var(--accent1-color)
+}
+
+.history-image {
+    width: 500px;
+    height:auto;
+    justify-self: center;
+}
+
+
+/* ---Adventures Section---*/ 
+.adventures-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+.adventures-section > h2 {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid var(--accent2-color);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/*---footer--- */
+
+footer {
+    display: flex;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent1-color);
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    color: #000;
+    font-size: 0.9em;
+}
+
+footer p {
+    flex-grow: 1;
+   margin: 0;
+   text-align: center;
+}
+
+footer div {
+    display: flex;
+    gap: 10px;
+
+}
+
 footer img{
-    width: 50px;
+    width: 24px;
+    height: 24px;
+}
+
+footer a {
+display: block;
+}
+
+footer a:hover {
+    opacity: 0.7;
 }
