@@ -5,18 +5,19 @@
 }
 
 :root {
-    --primary-color: #1F508C; 
-    --secondary-color: #D2B48C; 
-    --accent1-color: #FFA500; 
-    --accent2-color: #6B8E23; 
+
+    --primary-color: #278175; 
+    --secondary-color: #fcfcf1; 
+    --accent1-color: #66b9ab; 
+    --accent2-color: #a7a85c; 
   
     --heading-font: 'Koulen', serif;
     --paragraph-font: 'Roboto', sans-serif;
   
-    --nav-background-color: #333; 
-    --nav-link-color: #FFF; 
-    --nav-hover-link-color: #FFA500; 
-    --nav-hover-background-color: #555; 
+    --nav-background-color: #278175; 
+    --nav-link-color: #fcfcf1; 
+    --nav-hover-link-color: #06515d; 
+    --nav-hover-background-color: #06515d; 
 
 }
 
@@ -37,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
     display: flex;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--nav-background-color);
     padding: 10px 50px 10px 50px;
 
 }
@@ -101,7 +102,7 @@ nav {
 .hero article {
     position: absolute;
     bottom: 0;
-    background-color: rgb(210, 180, 140, 0.7); 
+    background-color: rgb(167, 168, 92, 0.8); 
     color:white;
     padding:50px;
     margin:50px;
@@ -257,7 +258,7 @@ font-size: 1em;
     text-align: center;
 }
 
-figure {
+.team-section figure {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,12 +267,12 @@ figure {
     border: 1px solid var(--accent2-color);
 }
 
-figure img {
+.team-section  figure img {
     width: 100%;
     height: auto;
 }
 
-figcaption {
+.team-section figcaption {
     margin-top: 10px;
     text-align: center;
     font-size: 0.9em;
@@ -364,7 +365,7 @@ form label {
     margin-top: 10px;
 }
 
-#submit {
+button {
     padding: 10px 15px;
     color: white;
     background: var(--primary-color);
@@ -372,7 +373,7 @@ form label {
     border-radius: 4px;
 }
 
-#submit:hover {
+button:hover {
     background-color: #555;
 }
 
@@ -389,6 +390,241 @@ footer {
     color: #000;
     font-size: 0.9em;
 }
+
+/*---- Trips Page----*/
+
+.hero-trips {
+    position: relative;
+    align-items: center;
+    margin-top: 10px;
+    color: #FFF;
+}
+
+.hero-trips img {
+    width: 100%;
+    height: 40em;
+    object-fit: cover;
+}
+
+.trips-hero-content{
+    position: absolute;
+    padding: 80px;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #FFF;
+   
+}
+
+.hero-trips h1 {
+    padding-bottom: 20px;
+    color: var(--nav-link-color);
+}
+
+    .hero-trips p {
+        padding-bottom: 30px;    
+color: var(--secondary-color);
+}
+
+.packages-trips {
+    text-align: center;
+    padding: 20px;
+}
+  
+/*----Package section----*/
+.packages-trips {
+    text-align: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+  }
+  
+  .packages-trips h2 {
+    margin-bottom: 30px;
+  }
+  
+  .packages-trips .card-container {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+  }
+  
+  .packages-trips article {
+    width: calc(33.333% - 20px); 
+    margin: 10px; 
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /
+  }
+  
+  .packages-trips figure,
+  .packages-trips figcaption {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  .packages-trips img {
+    width: 100%;
+    display: block; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+  }
+  
+  .packages-trips figcaption {
+    font-weight: bold;
+    padding: 16px; 
+    background: var(--accent2-color);
+    margin-top: -5px;
+  }
+  
+  .packages-trips p {
+    padding: 16px;
+    margin: 0;
+  }
+  
+
+.packages-trips .btn {
+    display: block;
+    margin: 0 20px 20px;
+    padding: 10px;
+    background-color: var(--nav-background-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* detais-trips */
+.detail-trips {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+    background-color: var(--secondary-color);
+  }
+  
+  .detail-trips h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .detail-trips table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; 
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  
+  .detail-trips th,
+  .detail-trips td {
+    text-align: center;
+    padding: 12px 6px;
+    border: 1px solid #ddd; 
+  }
+  
+  
+  .detail-trips th {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight:400;
+  }
+
+  
+  .detail-trips tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .detail-trips tr:nth-child(odd) {
+    background-color: #efefef;
+  }
+  
+
+  .detail-trips tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .detail-trips table {
+      display: block;
+    }
+    
+    .detail-trips th,
+    .detail-trips td {
+      display: block;
+      width: 100%;
+    }
+    
+    .detail-trips td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+    
+    .detail-trips td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+    
+    .detail-trips th {
+      display: none;
+    }
+  }
+
+  
+  .signup-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+  }
+  
+  .signup-image {
+    flex-basis: 50%;
+    height: 400px;
+}
+  
+  .signup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .signup-form {
+    flex-basis: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .signup-section {
+      flex-direction: column;
+    }
+  
+    .signup-image, .signup-form {
+      flex-basis: 100%;
+    }
+  
+    .signup-image {
+      height: auto; 
+    }
+  }
+  
+
+  
 
 footer p {
     flex-grow: 1;
